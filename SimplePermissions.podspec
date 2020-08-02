@@ -15,6 +15,6 @@ Pod::Spec.new do |spec|
 
   spec.source                = { :git => "https://github.com/RuslanShevtsovDev/SimplePermissions.git", :tag => "0.1.0" }
 
-  spec.source_files          = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files          = "Classes", "SimplePermissions/**/*.{h,m}"
   spec.swift_version         = "5.0"
 end
