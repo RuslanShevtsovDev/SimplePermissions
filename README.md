@@ -10,7 +10,8 @@ import SimplePermissions
 
 ```swift
  if Permissions.status(of: .microphone) == .notDetermined {
-   Permissions.request(for: .microphone) { status in                                print("Status of microphone permission: \(status)")
+   Permissions.request(for: .microphone) { status in
+    print("Status of microphone permission: \(status)")
    }
  }
 ```
