@@ -49,12 +49,12 @@ final class BluetoothPermission: NSObject, PermissionProtocol {
                 return .notDetermined
             }
         } else {
-            switch CBPeripheralManager.authorizationStatus() {
+            switch CBPeripheralManager().authorization {
             case .notDetermined, .restricted:
                 return .notDetermined
             case .denied:
                 return .denied
-            case .authorized:
+            case .allowedAlways:
                 return .granted
             @unknown default:
                 return .notDetermined
@@ -87,7 +87,7 @@ extension BluetoothPermission: CBPeripheralManagerDelegate {
                 completion?(.denied)
             }
         } else {
-            if CBPeripheralManager.authorizationStatus() == .authorized {
+            if CBPeripheralManager().authorization == .allowedAlways {
                 completion?(.granted)
             } else {
                 completion?(.denied)
