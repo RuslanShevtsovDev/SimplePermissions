@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                  = "SimplePermissions"
-  spec.version               = "0.1.0"
+  spec.version               = "0.1.1"
   spec.summary               = "Simple solution for working with iOS permissions"
   spec.requires_arc          = true
 
@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.platform              = :ios
   spec.ios.deployment_target = "13.0"
 
-  spec.source                = { :git => "https://github.com/RuslanShevtsovDev/SimplePermissions.git", :tag => "0.1.0" }
+  spec.source                = { :git => "https://github.com/RuslanShevtsovDev/SimplePermissions.git", :tag => spec.version }
 
   spec.source_files          = "Classes", "SimplePermissions/**/*.{swift}"
   spec.swift_version         = "5.0"
