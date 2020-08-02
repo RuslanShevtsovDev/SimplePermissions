@@ -28,7 +28,7 @@ platform :ios, '13.0'
 
 use_frameworks!
 
-pod 'SimplePermissions', '~> 0.1.0'
+pod 'SimplePermissions', '~> 0.1.1'
 ```
 
 Then run:
